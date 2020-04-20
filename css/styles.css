@@ -332,6 +332,8 @@ section {
     .hamburger__toggle:checked ~ .nav {
       left: 0;
       visibility: visible; }
+    .hamburger__toggle:checked ~ .hamburger {
+      background-color: transparent; }
     .hamburger__toggle:checked ~ .hamburger > .hamburger__lines {
       visibility: hidden;
       transform: translate(-50%, -50%) rotate(0deg); }
@@ -620,7 +622,7 @@ section {
   @media (max-width: 56.25em) {
     .nav {
       flex-direction: column;
-      background-color: rgba(49, 40, 22, 0.8);
+      background-color: rgba(49, 40, 22, 0.85);
       position: fixed;
       height: 100vh;
       width: 100%;
