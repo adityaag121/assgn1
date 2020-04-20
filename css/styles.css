@@ -284,8 +284,12 @@ section {
     padding: 1rem;
     -webkit-clip-path: circle(5rem at 50% 50%);
     clip-path: circle(rem at 50% 50%);
-    overflow: hidden;
-    background-color: #ddd; }
+    overflow: hidden; }
+    @media (max-width: 37.5em) {
+      .card5__img {
+        padding: 0; }
+        .card5__img img {
+          margin-top: 1rem; } }
   .card5 img {
     max-width: 100%; }
 
