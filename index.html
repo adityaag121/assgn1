@@ -7,339 +7,394 @@
         
 		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
-        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+        <link rel="shortcut icon" type="image/svg" href="images/logo.svg">
         
         <title>ClickedIn|Online Shopping site in India</title>
     </head>
     <body>
-        <input type="checkbox" name="menu" id="menu" class="hamburger__toggle">
-        <div class="hamburger">
-            <div class="hamburger__lines"></div>
-        </div>
-
-        <nav class="nav">
-            <div class="logo-small"><img src="images/favicon.png" alt="Logo" class="logo-small__img"></div>
-            <ul class="nav__links">
-               <li class="nav__links__item"><a href="#home" class="nav__link">Home</a></li>   
-               <li class="nav__links__item"><a href="#section-soon" class="nav__link">Launching Soon</a></li>
-               <li class="nav__links__item"><a href="#surprise" class="nav__link">Deals of the Day</a></li>
-               <li class="nav__links__item"><a href="#most-bought" class="nav__link">Bestsellers</a></li>
-               <li class="nav__links__item"><a href="#reviews" class="nav__link">Reviews</a></li>
-               <li class="nav__links__item"><a href="#feedback" class="nav__link">Feedback</a></li>
-            </ul>
-            <span class="covid"><a href="https://g.co/kgs/CD8VqL" target="_blank" class="nav__link">COVID-19</a></span>
-        </nav>
-		<section class="section-intro" id="home">
-            <div class="section-intro__content">
-                <h1 class="heading-1 small-margin">
-                    Clicked<span class="heading-1--in">in</span>
-                </h1>
-                <p class="motto huge-margin">Welcome to your one-stop shopping destination!</p>
-                <a href="#surprise" class="btn">See Exciting Offers &rarr;</a>
-            </div>
-        </section>
-        
-        <section id="section-soon">
-            <h2 class="heading-2">Launching Soon...</h2>
-            <p class="description row">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores commodi esse officia qui voluptatibus similique veniam error sunt quod! Delectus facilis ullam cum aperiam sed quas recusandae asperiores nostrum quos. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            <div class="stack">
-                <img src="images/soon-3.jpg" alt="IPad Pro" class="stack__photo stack__photo--1">
-                <img src="images/soon-2.jpg" alt="Controller Black" class="stack__photo stack__photo--2">
-                <img src="images/soon-1.jpg" alt="Drone" class="stack__photo stack__photo--3">
-            </div>
-        </section>
-        <hr>
-        <section id="surprise">
-            <h2 class="heading-2 huge-margin">Deals of the day</h2>
-            <div class="row">
-                
-                <div class="card">
-                    <div class="card__img-container">
-                       <img src="images/card1.jpeg" alt="iphone-11-pro-max-256" class="card__img">
-                    </div>
-                    <h4 class="card__brand">Apple</h4>
-                    <div class="card__product">IPhone 11 Pro Max (256 GB)</div>
-                    <div class="card__price">
-                        <h5 class="card__price--discounted">&#8377;1,21,900</h5>
-                        <span class="card__price--old">&#8377;1,40,300</span>
-                        <span class="card__price--off">13% off</span>
-                    </div>
-                    <a href="#popup-1" class="card__learn-more">Learn more&rarr;</a>
-                </div>
-
-                <div class="card">
-                    <div class="card__img-container">
-                        <img src="images/card2.jpeg" alt="wak20164in-bosch" class="card__img">
-                    </div>
-                    <h4 class="card__brand">Bosch</h4>
-                    <div class="card__product">7 kg ExpressWash Fully Automatic Front Load</div>
-                    <div class="card__price">
-                        <h5 class="card__price--discounted">&#8377;27,499</h5>
-                        <span class="card__price--old">&#8377;33,999</span>
-                        <span class="card__price--off">19% off</span>
-                    </div>
-                    <a href="#popup-2" class="card__learn-more">Learn more&rarr;</a>
-                </div>
-
-                <div class="card">
-                    <div class="card__img-container">
-                        <img src="images/card3.jpeg" alt="sony-kd-43x8000g" class="card__img">
-                    </div>
-                    <h4 class="card__brand">Sony</h4>
-                    <div class="card__product">Bravia X8000G 108cm (43 inch) Ultra HD (4K) LED Smart Android TV</div>
-                    <div class="card__price">
-                        <h5 class="card__price--discounted">&#8377;60,999</h5>
-                        <span class="card__price--old">&#8377;74,900</span>
-                        <span class="card__price--off">18% off</span>
-                    </div>
-                    <a href="#popup-3" class="card__learn-more">Learn more&rarr;</a>
-                </div>
-
-                <div class="card">
-                    <div class="card__img-container">
-                        <img src="images/card4.jpeg" alt="9-court-royale-ac-nike" class="card__img">
-                    </div>
-                    <h4 class="card__brand">Nike</h4>
-                    <div class="card__product">Court Royale AC Sneakers For Men (White)</div>
-                    <div class="card__price">
-                        <h5 class="card__price--discounted">&#8377;3,589</h5>
-                        <span class="card__price--old">&#8377;4,495</span>
-                        <span class="card__price--off">20% off</span>
-                    </div>
-                    <a href="#popup-4" class="card__learn-more">Learn more&rarr;</a>
-                </div>
+        <input type="radio" name="dark" id="light" class="darkmode">
+        <input type="radio" name="dark" id="dark" class="darkmode">
+        <label for="light" class="darkmode__label darkmode__label--light">Light Theme</label>
+        <label for="dark" class="darkmode__label darkmode__label--dark">Dark Theme</label>
+        <div class="body">
+            <input type="checkbox" name="menu" id="menu" class="hamburger__toggle">
+            <div class="hamburger">
+                <div class="hamburger__lines"></div>
             </div>
 
-            <div class="popup" id="popup-1">
-                <div class="popup__container">
-                    <a href="#surprise" class="popup__close heading-3">&times;</a>
-                    <div class="popup__img-container">
-                        <img src="images/card1.jpeg" alt="9-court-royale-ac-nike" class="popup__img">
+            <nav class="nav">
+                <div class="logo-small"><img src="images/logo.svg" alt="Logo" class="logo-small__img"></div>
+                <ul class="nav__links">
+                <li class="nav__links__item"><a href="#home" class="nav__link">Home</a></li>   
+                <li class="nav__links__item"><a href="#section-soon" class="nav__link">Launching Soon</a></li>
+                <li class="nav__links__item"><a href="#surprise" class="nav__link">Deals of the Day</a></li>
+                <li class="nav__links__item"><a href="#most-bought" class="nav__link">Bestsellers</a></li>
+                <li class="nav__links__item"><a href="#reviews" class="nav__link">Reviews</a></li>
+                <li class="nav__links__item"><a href="#feedback" class="nav__link">Feedback</a></li>
+                </ul>
+                <span class="covid"><a href="https://g.co/kgs/CD8VqL" target="_blank" class="nav__link">COVID-19</a></span>
+            </nav>
+            <section class="section-intro" id="home">
+                <div class="section-intro__content">
+                    <div class="svg">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 201.4 201.4" style="enable-background:new 0 0 201.4 201.4;" xml:space="preserve">
+                            <g id="bag-top">
+                                <path d="M126.3,51.2H75.1c-1.9,0-3.4-1.5-3.4-3.4V29c0-16,13-29,29-29s29,13,29,29v18.8C129.7,49.7,128.2,51.2,126.3,51.2z
+                                M78.5,44.4h44.4V29c0-12.2-10-22.2-22.2-22.2S78.5,16.8,78.5,29V44.4z"/>
+                                <polygon class="st0" points="175.8,64.9 25.6,64.9 35.8,47.8 165.5,47.8 "/>
+                                <path d="M175.8,68.3H25.6c-1.2,0-2.4-0.7-3-1.7c-0.6-1.1-0.6-2.4,0-3.4L32.9,46c0.6-1,1.7-1.7,2.9-1.7h129.7c1.2,0,2.3,0.6,2.9,1.7
+                                l10.2,17.1c0.6,1.1,0.6,2.4,0,3.4C178.1,67.6,177,68.3,175.8,68.3z M31.6,61.4h138.1l-6.1-10.2H37.8L31.6,61.4z"/>
+                            </g>
+                            <g id="green">
+                                
+                                    <rect x="104.1" y="29" transform="matrix(0.2277 -0.9737 0.9737 0.2277 48.6677 167.1469)" class="st1" width="51.2" height="47.8"/>
+                                <path d="M147.1,86.7c-0.3,0-0.5,0-0.8-0.1L99.8,75.7c-0.9-0.2-1.6-0.8-2.1-1.5c-0.5-0.8-0.6-1.7-0.4-2.6l11.7-49.9
+                                    c0.4-1.8,2.3-3,4.1-2.5l46.5,10.9c0.9,0.2,1.6,0.8,2.1,1.5c0.5,0.8,0.6,1.7,0.4,2.6l-11.7,49.9C150.1,85.6,148.7,86.7,147.1,86.7z
+                                    M104.7,69.8l39.9,9.3L154.7,36l-39.9-9.3L104.7,69.8z"/>
+                            </g>
+                            <g id="blue">
+                                
+                                    <rect x="42.3" y="16.9" transform="matrix(0.9931 -0.1174 0.1174 0.9931 -5.1131 8.6737)" class="st2" width="57.5" height="61.6"/>
+                                <path d="M46.1,85.1c-1.7,0-3.2-1.3-3.4-3l-7.2-61.2c-0.2-1.9,1.1-3.6,3-3.8l57.1-6.7c0.9-0.1,1.8,0.1,2.5,0.7s1.2,1.4,1.3,2.3
+                                    l7.2,61.2c0.1,0.9-0.1,1.8-0.7,2.5c-0.6,0.7-1.4,1.2-2.3,1.3l-57.1,6.7C46.4,85.1,46.3,85.1,46.1,85.1z M42.7,23.5l6.4,54.4
+                                    L99.4,72L93,17.6L42.7,23.5z"/>
+                            </g>
+                            <g id="pink">
+                                
+                                    <rect x="70.6" y="42" transform="matrix(0.9723 -0.2338 0.2338 0.9723 -14.0295 25.1029)" class="st3" width="56.6" height="59.5"/>
+                                <path d="M78.3,110.7c-1.5,0-2.9-1.1-3.3-2.6L61.1,50.2c-0.4-1.8,0.7-3.7,2.5-4.1l55-13.2c0.9-0.2,1.8-0.1,2.6,0.4
+                                    c0.8,0.5,1.3,1.2,1.5,2.1l13.9,57.9c0.2,0.9,0.1,1.8-0.4,2.6c-0.5,0.8-1.2,1.3-2.1,1.5l-55,13.2C78.9,110.7,78.6,110.7,78.3,110.7z
+                                    M68.5,51.9l12.3,51.2l48.3-11.6l-12.3-51.2L68.5,51.9z"/>
+                            </g>
+                            <g id="bag-front">
+                                <polygon class="st4" points="182.6,198 18.8,198 25.6,64.9 175.8,64.9 "/>
+                                <path d="M182.6,201.4H18.8c-0.9,0-1.8-0.4-2.5-1.1c-0.6-0.7-1-1.6-0.9-2.5l6.8-133.1c0.1-1.8,1.6-3.2,3.4-3.2h150.2
+                                    c1.8,0,3.3,1.4,3.4,3.2l6.8,133.1c0,0.9-0.3,1.8-0.9,2.5C184.4,201,183.5,201.4,182.6,201.4z M22.4,194.6H179l-6.5-126.3H28.8
+                                    L22.4,194.6z"/>
+                                <circle class="st0" cx="126.3" cy="85.3" r="6.8"/>
+                                <path d="M126.3,95.6c-5.6,0-10.2-4.6-10.2-10.2s4.6-10.2,10.2-10.2s10.2,4.6,10.2,10.2S131.9,95.6,126.3,95.6z M126.3,81.9
+                                    c-1.9,0-3.4,1.5-3.4,3.4s1.5,3.4,3.4,3.4c1.9,0,3.4-1.5,3.4-3.4S128.2,81.9,126.3,81.9z"/>
+                                <circle class="st0" cx="75.1" cy="85.3" r="6.8"/>
+                                <path d="M75.1,95.6c-5.6,0-10.2-4.6-10.2-10.2s4.6-10.2,10.2-10.2s10.2,4.6,10.2,10.2S80.7,95.6,75.1,95.6z M75.1,81.9
+                                    c-1.9,0-3.4,1.5-3.4,3.4s1.5,3.4,3.4,3.4c1.9,0,3.4-1.5,3.4-3.4S77,81.9,75.1,81.9z"/>
+                                <path d="M100.7,136.5c-16,0-29-13-29-29V88.7c0-1.9,1.5-3.4,3.4-3.4s3.4,1.5,3.4,3.4v18.8c0,12.2,10,22.2,22.2,22.2
+                                    s22.2-10,22.2-22.2V90.1c-0.2-0.4-0.3-0.8-0.3-1.3c0-1.9,1.5-3.4,3.4-3.4h0.3c1.9,0,3.4,1.5,3.4,3.4v18.8
+                                    C129.7,123.5,116.7,136.5,100.7,136.5z"/>
+                            </g>
+                            </svg>
                     </div>
-                    <div class="popup__text">
-                        <h3 class="heading-3 medium-margin">Terms and Conditions</h3>
-                        <ol class="popup__terms">
-                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum debitis itaque molestiae nihil aut fuga ea atque. Veniam cupiditate pariatur quidem a assumenda, dolore natus, provident nemo suscipit quasi dicta.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt laboriosam maiores quaerat suscipit aut laborum earum, dolorem delectus quae dolore voluptatibus enim quis aliquid porro! Nam at hic fugit harum.</li>
-                        </ol>
-                    </div>
+                    <h1 class="heading-1 small-margin">
+                        Clicked<span class="heading-1--in">in</span>
+                    </h1>
+                    <p class="motto huge-margin">Welcome to your one-stop shopping destination!</p>
+                    <a href="#surprise" class="btn">See Exciting Offers &rarr;</a>
                 </div>
-            </div>
-
-            <div class="popup" id="popup-2">
-                <div class="popup__container">
-                    <a href="#surprise" class="popup__close heading-3">&times;</a>
-                    <div class="popup__img-container">
-                        <img src="images/card2.jpeg" alt="9-court-royale-ac-nike" class="popup__img">
-                    </div>
-                    <div class="popup__text">
-                        <h3 class="heading-3 medium-margin">Terms and Conditions</h3>
-                        <ol class="popup__terms">
-                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum debitis itaque molestiae nihil aut fuga ea atque. Veniam cupiditate pariatur quidem a assumenda, dolore natus, provident nemo suscipit quasi dicta.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt laboriosam maiores quaerat suscipit aut laborum earum, dolorem delectus quae dolore voluptatibus enim quis aliquid porro! Nam at hic fugit harum.</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-
-            <div class="popup" id="popup-3">
-                <div class="popup__container">
-                    <a href="#surprise" class="popup__close heading-3">&times;</a>
-                    <div class="popup__img-container">
-                        <img src="images/card3.jpeg" alt="9-court-royale-ac-nike" class="popup__img">
-                    </div>
-                    <div class="popup__text">
-                        <h3 class="heading-3 medium-margin">Terms and Conditions</h3>
-                        <ol class="popup__terms">
-                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum debitis itaque molestiae nihil aut fuga ea atque. Veniam cupiditate pariatur quidem a assumenda, dolore natus, provident nemo suscipit quasi dicta.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt laboriosam maiores quaerat suscipit aut laborum earum, dolorem delectus quae dolore voluptatibus enim quis aliquid porro! Nam at hic fugit harum.</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-
-            <div class="popup" id="popup-4">
-                <div class="popup__container">
-                    <a href="#surprise" class="popup__close heading-3">&times;</a>
-                    <div class="popup__img-container">
-                        <img src="images/card4.jpeg" alt="9-court-royale-ac-nike" class="popup__img">
-                    </div>
-                    <div class="popup__text">
-                        <h3 class="heading-3 medium-margin">Terms and Conditions</h3>
-                        <ol class="popup__terms">
-                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum debitis itaque molestiae nihil aut fuga ea atque. Veniam cupiditate pariatur quidem a assumenda, dolore natus, provident nemo suscipit quasi dicta.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt laboriosam maiores quaerat suscipit aut laborum earum, dolorem delectus quae dolore voluptatibus enim quis aliquid porro! Nam at hic fugit harum.</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-            <div class="big-top-margin">
-                <a href="#" class="btn-text">See all deals &rarr;</a>
-            </div>
-        </section>
-
-        <hr>
-
-        <section id="most-bought">
-            <h2 class="heading-2 big-margin">Bestsellers</h2>
-            <div class="bestsellers">
-                <div class="row">
-                    <div class="card5">
-                        <div class="card5__img"><img src="images/best1.jpeg" alt="Bestsellers"></div>
-                        <div class="card__product">Metronaut Slim Blue Mens Jeans</div>
-                        <div class="rating"><span class="checked">&#9733;&#9733;&#9733;</span>&#9734;&#9734;</div><div class="bought">(21,456)</div>
-                    </div>
-                    <div class="card5">
-                        <div class="card5__img"><img src="images/best2.jpg" alt="Bestsellers"></div>
-                        <div class="card__product">Peter England Men Checkered Casual Shirt</div>
-                        <div class="rating"><span class="checked">&#9733;&#9733;&#9733;&#9733;</span>&#9734;</div><div class="bought">(13,120)</div>
-                    </div>
-                    <div class="card5">
-                        <div class="card5__img"><img src="images/best3.jpeg" alt="Bestsellers"></div>
-                        <div class="card__product">Gulmohar Jaipur Women Printed Cotton Blend Ethnic Dress</div>
-                        <div class="rating"><span class="checked">&#9733;&#9733;&#9733;&#9734;</span>&#9734;</div><div class="bought">(7,912)</div>
-                    </div>
-                    <div class="card5">
-                        <div class="card5__img"><img src="images/best4.jpeg" alt="Bestsellers"></div>
-                        <div class="card__product">Apple MacBook Air Core i5 5th Gen</div>
-                        <div class="rating"><span class="checked">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div><div class="bought">(24,439)</div>
-                    </div>
-                    <div class="card5">
-                        <div class="card5__img"><img src="images/best5.jpeg" alt="Bestsellers"></div>
-                        <div class="card__product">Realme C2 Diamond Black (32 GB)</div>
-                        <div class="rating"><span class="checked">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div><div class="bought">(7,11,456)</div>
-                    </div>
-                    <div class="card5">
-                        <div class="card5__img"><img src="images/best6.jpg" alt="Bestsellers"></div>
-                        <div class="card__product">Think and Grow Rich
-                            Napoleon Hill</div>
-                        <div class="rating"><span class="checked">&#9733;&#9733;&#9733;&#9733;</span>&#9734;</div><div class="bought">(16,642)</div>
-                    </div>
-                    <div class="card5">
-                        <div class="card5__img"><img src="images/best7.jpeg" alt="Bestsellers"></div>
-                        <div class="card__product">IWS 104 TC Cotton Double Printed Bedsheet</div>
-                        <div class="rating"><span class="checked">&#9733;&#9733;&#9733;</span>&#9734;&#9734;</div><div class="bought">(66,506)</div>
-                    </div>
-                    <div class="card5">
-                        <div class="card5__img"><img src="images/best8.jpeg" alt="Bestsellers"></div>
-                        <div class="card__product">Sparx Slippers</div>
-                        <div class="rating"><span class="checked">&#9733;&#9733;&#9733;&#9734;</span>&#9734;</div><div class="bought">(13,331)</div>
-                    </div>
-                    <div class="card5">
-                        <div class="card5__img"><img src="images/best9.jpeg" alt="Bestsellers"></div>
-                        <div class="card__product">Mi Smart Band 3i (Black Strap, Size : Regular)</div>
-                        <div class="rating"><span class="checked">&#9733;&#9733;&#9733;&#9733;</span>&#9734;</div><div class="bought">(16,282)</div>
-                    </div>
-                    <div class="card5">
-                        <div class="card5__img"><img src="images/best10.jpeg" alt="Bestsellers"></div>
-                        <div class="card__product">Sandisk Cruzer Blade 16 GB Utility Pendrive</div>
-                        <div class="rating"><span class="checked">&#9733;&#9733;&#9733;&#9733;</span>&#9734;</div><div class="bought">(2,19,897)</div>
-                    </div>
-                </div>
-            </div>      
-        </section>
-
-        <hr>
-
-        <section class="reviews" id="reviews">
-            <h2 class="heading-2 big-margin">What our customers have to say</h2>
-
-            <div class="row">
-                <div class="review medium-margin review--odd">
-                    <figure class="review__circle small-margin">
-                        <img src="images/person1.jpg" alt="Customer" class="review__img">
-                        <figcaption class="review__caption">Sachin Bansal</figcaption>
-                    </figure>
-                    <div class="review__text">
-                        <h3 class="heading-3 small-margin">"I order everything from ClickedIn"</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur
-                            ducimus quam nisi exercitationem omnis earum qui. Lorem ipsum sit amet consectetur adipisicing elit. Inventore, obcaecati? Lorem ipsum dolor sit amet consectetur adipisicing. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="review medium-margin review--even">
-                    <figure class="review__circle">
-                        <img src="images/person2.jpg" alt="Customer" class="review__img">
-                        <figcaption class="review__caption">Jeff Bezos</figcaption>
-                    </figure>
-                    <div class="review__text">
-                        <h3 class="heading-3 small-margin">"WOW! My life is so easy now"</h3>
-                        <p>
-                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae harum animi consequatur accusantium aut repudiandae deserunt odit, ipsa minus incidunt enim recusandae eos quidem cumque dignissimos in delectus, voluptas ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="review medium-margin review--odd">
-                    <figure class="review__circle">
-                        <img src="images/person3.jpg" alt="Customer" class="review__img">
-                        <figcaption class="review__caption">Jack Ma</figcaption>
-                    </figure>
-                    <div class="review__text">
-                        <h3 class="heading-3 small-margin">"I don't go to the market anymore"</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ab, nihil quos dolores eaque veniam quam commodi saepe voluptatibus sequi ducimus magni accusamus delectus tempora ipsa, libero pariatur. Inventore, obcaecati? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="top-margin"><a href="#" class="btn-text">Read more reviews &rarr;</a></div>
-        </section>
-
-        <hr>
-
-        <section class="feedback" id="feedback">
+            </section>
             
-            <div class="feedback__container">
-                <div class="form__container">
-                    <form action="#" class="form">
-                        <h3 class="heading-3 heading-3--larger big-margin">Because Your Feedback Matters...</h3>
-                        <div class="form__group">
-                            <input type="text" class="form__input" placeholder="First Name" id="first-name" required>
-                            <label for="first-name" class="form__label">First Name</label>
-                        </div>
-                        <div class="form__group">
-                            <input type="text" class="form__input" placeholder="Last Name" id="last-name" required>
-                            <label for="last-name" class="form__label">Last Name</label>
-                        </div>
-                        <div class="form__group">
-                            <textarea placeholder="Write your review here" class="form__input form__input--review" id="review" maxlength="120" rows="2" required></textarea>
-                            <label for="review" class="form__label">Review</label>
-                        </div>
-                        <input type="submit" class="btn btn--form medium-top-margin" value="Submit"
-                    </form>
+            <section id="section-soon">
+                <h2 class="heading-2">Launching Soon...</h2>
+                <p class="description row">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores commodi esse officia qui voluptatibus similique veniam error sunt quod! Delectus facilis ullam cum aperiam sed quas recusandae asperiores nostrum quos. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <div class="stack">
+                    <img src="images/soon-3.jpg" alt="IPad Pro" class="stack__photo stack__photo--1">
+                    <img src="images/soon-2.jpg" alt="Controller Black" class="stack__photo stack__photo--2">
+                    <img src="images/soon-1.jpg" alt="Drone" class="stack__photo stack__photo--3">
                 </div>
-                <div class="form__images">
-                    <img src="images/form1.jpg" alt="Shopping" class="form__images__img"><img src="images/form2.jpg" alt="Card payment" class="form__images__img">
-                </div>
-            </div>
-        </section>
+            </section>
+            <hr>
+            <section id="surprise">
+                <h2 class="heading-2 huge-margin">Deals of the day</h2>
+                <div class="row">
+                    
+                    <div class="card">
+                        <div class="card__img-container">
+                        <img src="images/card1.jpeg" alt="iphone-11-pro-max-256" class="card__img">
+                        </div>
+                        <h4 class="card__brand">Apple</h4>
+                        <div class="card__product">IPhone 11 Pro Max (256 GB)</div>
+                        <div class="card__price">
+                            <h5 class="card__price--discounted">&#8377;1,21,900</h5>
+                            <span class="card__price--old">&#8377;1,40,300</span>
+                            <span class="card__price--off">13% off</span>
+                        </div>
+                        <a href="#popup-1" class="card__learn-more">Learn more&rarr;</a>
+                    </div>
 
-        <footer class="footer">
-            <div class="row">
-                <div class="col-1-of-2">
-                    <ul class="footer__links">
-                        <li class="footer__links__item"><a href="#" class="footer__link">Terms</a></li>
-                        <li class="footer__links__item"><a href="#" class="footer__link">Company</a></li>
-                        <li class="footer__links__item"><a href="#" class="footer__link">Privacy Policy</a></li>
-                        <li class="footer__links__item"><a href="#" class="footer__link">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-1-of-2">
-                    <div class="big-logo"><img src="images/logo.png" alt="logo" class="big-logo__img"></div>
-                    <p class="footer__text">Built by Aditya Agrawal for his assignment on HTML and CSS in KTJ Summer Workshop for web development. Copyright © by Aditya Agrawal. You are 100% allowed to use this webpage for both personal and commercial use, but NOT to claim it as your own design. A credit to the original author, Aditya Agrawal, is of course highly appreciated!</p>
-                </div>
-            </div>
-        </footer>
+                    <div class="card">
+                        <div class="card__img-container">
+                            <img src="images/card2.jpeg" alt="wak20164in-bosch" class="card__img">
+                        </div>
+                        <h4 class="card__brand">Bosch</h4>
+                        <div class="card__product">7 kg ExpressWash Fully Automatic Front Load</div>
+                        <div class="card__price">
+                            <h5 class="card__price--discounted">&#8377;27,499</h5>
+                            <span class="card__price--old">&#8377;33,999</span>
+                            <span class="card__price--off">19% off</span>
+                        </div>
+                        <a href="#popup-2" class="card__learn-more">Learn more&rarr;</a>
+                    </div>
 
-        <div class="back-to-top">
-            <a href="#" class="btn-top"><img src="images/icon.png" alt="top"></a>
+                    <div class="card">
+                        <div class="card__img-container">
+                            <img src="images/card3.jpeg" alt="sony-kd-43x8000g" class="card__img">
+                        </div>
+                        <h4 class="card__brand">Sony</h4>
+                        <div class="card__product">Bravia X8000G 108cm (43 inch) Ultra HD (4K) LED Smart Android TV</div>
+                        <div class="card__price">
+                            <h5 class="card__price--discounted">&#8377;60,999</h5>
+                            <span class="card__price--old">&#8377;74,900</span>
+                            <span class="card__price--off">18% off</span>
+                        </div>
+                        <a href="#popup-3" class="card__learn-more">Learn more&rarr;</a>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__img-container">
+                            <img src="images/card4.jpeg" alt="9-court-royale-ac-nike" class="card__img">
+                        </div>
+                        <h4 class="card__brand">Nike</h4>
+                        <div class="card__product">Court Royale AC Sneakers For Men (White)</div>
+                        <div class="card__price">
+                            <h5 class="card__price--discounted">&#8377;3,589</h5>
+                            <span class="card__price--old">&#8377;4,495</span>
+                            <span class="card__price--off">20% off</span>
+                        </div>
+                        <a href="#popup-4" class="card__learn-more">Learn more&rarr;</a>
+                    </div>
+                </div>
+
+                <div class="popup" id="popup-1">
+                    <div class="popup__container">
+                        <a href="#surprise" class="popup__close heading-3">&times;</a>
+                        <div class="popup__img-container">
+                            <img src="images/card1.jpeg" alt="9-court-royale-ac-nike" class="popup__img">
+                        </div>
+                        <div class="popup__text">
+                            <h3 class="heading-3 medium-margin">Terms and Conditions</h3>
+                            <ol class="popup__terms">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum debitis itaque molestiae nihil aut fuga ea atque. Veniam cupiditate pariatur quidem a assumenda, dolore natus, provident nemo suscipit quasi dicta.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt laboriosam maiores quaerat suscipit aut laborum earum, dolorem delectus quae dolore voluptatibus enim quis aliquid porro! Nam at hic fugit harum.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup" id="popup-2">
+                    <div class="popup__container">
+                        <a href="#surprise" class="popup__close heading-3">&times;</a>
+                        <div class="popup__img-container">
+                            <img src="images/card2.jpeg" alt="9-court-royale-ac-nike" class="popup__img">
+                        </div>
+                        <div class="popup__text">
+                            <h3 class="heading-3 medium-margin">Terms and Conditions</h3>
+                            <ol class="popup__terms">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum debitis itaque molestiae nihil aut fuga ea atque. Veniam cupiditate pariatur quidem a assumenda, dolore natus, provident nemo suscipit quasi dicta.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt laboriosam maiores quaerat suscipit aut laborum earum, dolorem delectus quae dolore voluptatibus enim quis aliquid porro! Nam at hic fugit harum.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup" id="popup-3">
+                    <div class="popup__container">
+                        <a href="#surprise" class="popup__close heading-3">&times;</a>
+                        <div class="popup__img-container">
+                            <img src="images/card3.jpeg" alt="9-court-royale-ac-nike" class="popup__img">
+                        </div>
+                        <div class="popup__text">
+                            <h3 class="heading-3 medium-margin">Terms and Conditions</h3>
+                            <ol class="popup__terms">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum debitis itaque molestiae nihil aut fuga ea atque. Veniam cupiditate pariatur quidem a assumenda, dolore natus, provident nemo suscipit quasi dicta.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt laboriosam maiores quaerat suscipit aut laborum earum, dolorem delectus quae dolore voluptatibus enim quis aliquid porro! Nam at hic fugit harum.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup" id="popup-4">
+                    <div class="popup__container">
+                        <a href="#surprise" class="popup__close heading-3">&times;</a>
+                        <div class="popup__img-container">
+                            <img src="images/card4.jpeg" alt="9-court-royale-ac-nike" class="popup__img">
+                        </div>
+                        <div class="popup__text">
+                            <h3 class="heading-3 medium-margin">Terms and Conditions</h3>
+                            <ol class="popup__terms">
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum debitis itaque molestiae nihil aut fuga ea atque. Veniam cupiditate pariatur quidem a assumenda, dolore natus, provident nemo suscipit quasi dicta.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt laboriosam maiores quaerat suscipit aut laborum earum, dolorem delectus quae dolore voluptatibus enim quis aliquid porro! Nam at hic fugit harum.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="big-top-margin">
+                    <a href="#" class="btn-text">See all deals &rarr;</a>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="most-bought">
+                <h2 class="heading-2 big-margin">Bestsellers</h2>
+                <div class="bestsellers">
+                    <div class="row">
+                        <div class="card5">
+                            <div class="card5__img"><img src="images/best1.jpeg" alt="Bestsellers"></div>
+                            <div class="card__product">Metronaut Slim Blue Mens Jeans</div>
+                            <div class="rating"><span class="checked">&#9733;&#9733;&#9733;</span>&#9734;&#9734;</div><div class="bought">(21,456)</div>
+                        </div>
+                        <div class="card5">
+                            <div class="card5__img"><img src="images/best2.jpg" alt="Bestsellers"></div>
+                            <div class="card__product">Peter England Men Checkered Casual Shirt</div>
+                            <div class="rating"><span class="checked">&#9733;&#9733;&#9733;&#9733;</span>&#9734;</div><div class="bought">(13,120)</div>
+                        </div>
+                        <div class="card5">
+                            <div class="card5__img"><img src="images/best3.jpeg" alt="Bestsellers"></div>
+                            <div class="card__product">Gulmohar Jaipur Women Printed Cotton Blend Ethnic Dress</div>
+                            <div class="rating"><span class="checked">&#9733;&#9733;&#9733;&#9734;</span>&#9734;</div><div class="bought">(7,912)</div>
+                        </div>
+                        <div class="card5">
+                            <div class="card5__img"><img src="images/best4.jpeg" alt="Bestsellers"></div>
+                            <div class="card__product">Apple MacBook Air Core i5 5th Gen</div>
+                            <div class="rating"><span class="checked">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div><div class="bought">(24,439)</div>
+                        </div>
+                        <div class="card5">
+                            <div class="card5__img"><img src="images/best5.jpeg" alt="Bestsellers"></div>
+                            <div class="card__product">Realme C2 Diamond Black (32 GB)</div>
+                            <div class="rating"><span class="checked">&#9733;&#9733;&#9733;&#9733;&#9734;</span></div><div class="bought">(7,11,456)</div>
+                        </div>
+                        <div class="card5">
+                            <div class="card5__img"><img src="images/best6.jpg" alt="Bestsellers"></div>
+                            <div class="card__product">Think and Grow Rich
+                                Napoleon Hill</div>
+                            <div class="rating"><span class="checked">&#9733;&#9733;&#9733;&#9733;</span>&#9734;</div><div class="bought">(16,642)</div>
+                        </div>
+                        <div class="card5">
+                            <div class="card5__img"><img src="images/best7.jpeg" alt="Bestsellers"></div>
+                            <div class="card__product">IWS 104 TC Cotton Double Printed Bedsheet</div>
+                            <div class="rating"><span class="checked">&#9733;&#9733;&#9733;</span>&#9734;&#9734;</div><div class="bought">(66,506)</div>
+                        </div>
+                        <div class="card5">
+                            <div class="card5__img"><img src="images/best8.jpeg" alt="Bestsellers"></div>
+                            <div class="card__product">Sparx Slippers</div>
+                            <div class="rating"><span class="checked">&#9733;&#9733;&#9733;&#9734;</span>&#9734;</div><div class="bought">(13,331)</div>
+                        </div>
+                        <div class="card5">
+                            <div class="card5__img"><img src="images/best9.jpeg" alt="Bestsellers"></div>
+                            <div class="card__product">Mi Smart Band 3i (Black Strap, Size : Regular)</div>
+                            <div class="rating"><span class="checked">&#9733;&#9733;&#9733;&#9733;</span>&#9734;</div><div class="bought">(16,282)</div>
+                        </div>
+                        <div class="card5">
+                            <div class="card5__img"><img src="images/best10.jpeg" alt="Bestsellers"></div>
+                            <div class="card__product">Sandisk Cruzer Blade 16 GB Utility Pendrive</div>
+                            <div class="rating"><span class="checked">&#9733;&#9733;&#9733;&#9733;</span>&#9734;</div><div class="bought">(2,19,897)</div>
+                        </div>
+                    </div>
+                </div>      
+            </section>
+
+            <hr>
+
+            <section class="reviews" id="reviews">
+                <h2 class="heading-2 big-margin">What our customers have to say</h2>
+
+                <div class="row">
+                    <div class="review medium-margin review--odd">
+                        <figure class="review__circle small-margin">
+                            <img src="images/person1.jpg" alt="Customer" class="review__img">
+                            <figcaption class="review__caption">Sachin Bansal</figcaption>
+                        </figure>
+                        <div class="review__text">
+                            <h3 class="heading-3 small-margin">"I order everything from ClickedIn"</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur
+                                ducimus quam nisi exercitationem omnis earum qui. Lorem ipsum sit amet consectetur adipisicing elit. Inventore, obcaecati? Lorem ipsum dolor sit amet consectetur adipisicing. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="review medium-margin review--even">
+                        <figure class="review__circle">
+                            <img src="images/person2.jpg" alt="Customer" class="review__img">
+                            <figcaption class="review__caption">Jeff Bezos</figcaption>
+                        </figure>
+                        <div class="review__text">
+                            <h3 class="heading-3 small-margin">"WOW! My life is so easy now"</h3>
+                            <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae harum animi consequatur accusantium aut repudiandae deserunt odit, ipsa minus incidunt enim recusandae eos quidem cumque dignissimos in delectus, voluptas ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="review medium-margin review--odd">
+                        <figure class="review__circle">
+                            <img src="images/person3.jpg" alt="Customer" class="review__img">
+                            <figcaption class="review__caption">Jack Ma</figcaption>
+                        </figure>
+                        <div class="review__text">
+                            <h3 class="heading-3 small-margin">"I don't go to the market anymore"</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ab, nihil quos dolores eaque veniam quam commodi saepe voluptatibus sequi ducimus magni accusamus delectus tempora ipsa, libero pariatur. Inventore, obcaecati? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-margin"><a href="#" class="btn-text">Read more reviews &rarr;</a></div>
+            </section>
+
+            <hr>
+
+            <section class="feedback" id="feedback">
+                
+                <div class="feedback__container">
+                    <div class="form__container">
+                        <form action="#" class="form">
+                            <h3 class="heading-3 heading-3--larger big-margin">Because Your Feedback Matters...</h3>
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="First Name" id="first-name" required>
+                                <label for="first-name" class="form__label">First Name</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Last Name" id="last-name" required>
+                                <label for="last-name" class="form__label">Last Name</label>
+                            </div>
+                            <div class="form__group">
+                                <textarea placeholder="Write your review here" class="form__input form__input--review" id="review" maxlength="120" rows="2" required></textarea>
+                                <label for="review" class="form__label">Review</label>
+                            </div>
+                            <input type="submit" class="btn btn--form medium-top-margin">
+                        </form>
+                    </div>
+                    <div class="form__images">
+                        <img src="images/form1.jpg" alt="Shopping" class="form__images__img"><img src="images/form2.jpg" alt="Card payment" class="form__images__img">
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <ul class="footer__links">
+                            <li class="footer__links__item"><a href="#" class="footer__link">Terms</a></li>
+                            <li class="footer__links__item"><a href="#" class="footer__link">Company</a></li>
+                            <li class="footer__links__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+                            <li class="footer__links__item"><a href="#" class="footer__link">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="big-logo"><img src="images/logo.png" alt="logo" class="big-logo__img"></div>
+                        <p class="footer__text">Built by Aditya Agrawal for his assignment on HTML and CSS in KTJ Summer Workshop for web development. Copyright © by Aditya Agrawal. You are 100% allowed to use this webpage for both personal and commercial use, but NOT to claim it as your own design. A credit to the original author, Aditya Agrawal, is of course highly appreciated!</p>
+                    </div>
+                </div>
+            </footer>
+
+            <div class="back-to-top">
+                <a href="#" class="btn-top"><img src="images/icon.png" alt="top"></a>
+            </div>
+
         </div>
     </body>
 </html>
